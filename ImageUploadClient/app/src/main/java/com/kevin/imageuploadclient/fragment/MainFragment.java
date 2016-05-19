@@ -16,6 +16,7 @@ import com.kevin.imageuploadclient.util.Constant;
 import java.io.File;
 
 import butterknife.Bind;
+import okhttp3.Headers;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
@@ -120,8 +121,11 @@ public class MainFragment extends PictureSelectFragment {
 
         String result = "error";
         MultipartBody.Builder builder = new MultipartBody.Builder();
+        // 这里演示添加用户ID
+//        builder.addFormDataPart("userId", "20160519142605");
         builder.addFormDataPart("image", imagePath,
                 RequestBody.create(MediaType.parse("image/jpeg"), new File(imagePath)));
+
         RequestBody requestBody = builder.build();
         Request.Builder reqBuilder = new Request.Builder();
         Request request = reqBuilder

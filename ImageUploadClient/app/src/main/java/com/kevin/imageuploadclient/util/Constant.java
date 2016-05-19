@@ -14,5 +14,5 @@ package com.kevin.imageuploadclient.util;
 public class Constant {
 
     /** 服务器基地址 */
-    public static final String BASE_URL = "http://192.168.1.34:8080/ImageUploadServer";
+    public static final String BASE_URL = "http://192.168.1.61:8080/ImageUploadServer";
 }
