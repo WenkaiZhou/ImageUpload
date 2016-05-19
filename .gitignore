@@ -3,3 +3,4 @@
 /ImageUploadClient/.gradle
 /ImageUploadClient/build
 /ImageUploadClient/local.properties
+/ImageUploadServer/WebRoot/WEB-INF/classes
